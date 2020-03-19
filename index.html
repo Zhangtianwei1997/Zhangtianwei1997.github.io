@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+     Hexo
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
+
+  
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content">
+      
+<section class="cover">
+    
+      
+      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
+        target="_blank"><img width="149" height="149" src="/images/forkme.png"
+          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="/images/cover1.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="/">Hexo</a></h1>
+      <div id="subtitle-box">
+        
+        <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+<div id="main">
+  <section class="outer">
+  <article class="articles">
+    
+    
+    
+    
+    <article id="post-hexo博客搭建" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/03/18/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"
+    >hexo博客搭建</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/03/18/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="article-date">
+  <time datetime="2020-03-18T12:54:31.000Z" itemprop="datePublished">2020-03-18</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h2 id="Windows-常用-cmd-指令"><a href="#Windows-常用-cmd-指令" class="headerlink" title="Windows 常用 cmd 指令"></a>Windows 常用 cmd 指令</h2><p>windows 下在地址栏输入 cmd 直接打开 command 地址为当前</p>
+<p>linux  —–&gt;   windows<br>pwd             chdir<br>ls              dir<br>cd              cd</p>
+<h2 id="第一步-安装-node-js-与-git-环境"><a href="#第一步-安装-node-js-与-git-环境" class="headerlink" title="第一步   安装 node.js 与 git 环境"></a>第一步   安装 node.js 与 git 环境</h2><p>安装 node.js<br>网址——&gt; node.js.org<br>Windows 建议下载 .msi 格式，下载完成无脑 “下一步” 0-0<br>顺便下载 git 并安装</p>
+<hr>
+<h2 id="第二步-更换-npm-源并安装-hexo"><a href="#第二步-更换-npm-源并安装-hexo" class="headerlink" title="第二步   更换 npm 源并安装 hexo"></a>第二步   更换 npm 源并安装 hexo</h2><p>安装并更换 npm 源<br>npm install -g cnpm registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> (马爸爸牛逼0-0)<br>回车，等</p>
+<p>cnpm -v 回车看版本<br>cnpm install -g hexo-cli 回车,等<br>hexo -v 回车看版本</p>
+<hr>
+<h2 id="第三步-初始化第一个博客"><a href="#第三步-初始化第一个博客" class="headerlink" title="第三步   初始化第一个博客"></a>第三步   初始化第一个博客</h2><p>建立一个 blog 文件夹<br>cd 到 blog<br>hexo init 直接初始化一个博客 （安装 git 后可以顺利进行） 等</p>
+<hr>
+<h2 id="第四步-查看-hello-world-博客"><a href="#第四步-查看-hello-world-博客" class="headerlink" title="第四步   查看 hello world 博客"></a>第四步   查看 hello world 博客</h2><p>输入 hexo s<br>localhost 4000 打开阅览器 输入 localhost：4000 进入<br>Ctrl + c 断开</p>
+<hr>
+<h2 id="第五步-编辑新的博客"><a href="#第五步-编辑新的博客" class="headerlink" title="第五步   编辑新的博客"></a>第五步   编辑新的博客</h2><p>hexo n “myblogname”<br>cd —&gt; source/_posts<br>查看生成的博客<br>使用编辑软件打开就可以进行编辑<br>编辑完保存退出</p>
+<hr>
+<h2 id="第六步-重新生成"><a href="#第六步-重新生成" class="headerlink" title="第六步   重新生成"></a>第六步   重新生成</h2><p>cd 到 blog 目录处<br>cd ../.. 返回两层目录<br>hexo g (generated)<br>hexo s —-&gt; localhost 4000 —–&gt; F5 一下 就有新的博客了<br>断开博客 ctrl + c</p>
+<hr>
+<h2 id="第七步-部署到远端"><a href="#第七步-部署到远端" class="headerlink" title="第七步  部署到远端"></a>第七步  部署到远端</h2><p>登录 Github （快去注册一个呀）<br>右上角 + 号点击创建仓库<br>名称 yournameid.github.io  (Zhangtianwei1997.github.io)<br>回到命令行，在 blog 下输入<br>cnpm install hexo-deployer-git –save 等待安装完成<br>设置 ——config.yml<br>使用编辑器（notepad++ 或者 vscode 什么的）打开<br>在最后几行更改为：<br>deploy:<br>  type: ‘git’<br>  repo: <a href="https://github.com/Zhangtianwei1997/Zhangtianwei1997.github.io.git" target="_blank" rel="noopener">https://github.com/Zhangtianwei1997/Zhangtianwei1997.github.io.git</a> （你的 github 仓库地址）<br>  branch: master<br>然后回到命令行<br>hexo d 部署到远端<br>报错是地址的，检查上面 repo 的网址前面有没有空格，注意 type 后面的单引号<br>who you are 使用<br> git config –global user.email “<a href="mailto:1349114380@qq.com">1349114380@qq.com</a>“<br> git config –global user.name “Zhangtianwei1997”<br>设置全局变量 注意空格<br>再次 hexo d 部署<br>输入 Zhangtianwei1997.github.io.git 就可以进入你的博客了</p>
+<hr>
+<h2 id="第八步-更换主题"><a href="#第八步-更换主题" class="headerlink" title="第八步   更换主题"></a>第八步   更换主题</h2><p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a> 主题*1<br>在 blog 下载主题<br>git clone <a href="https://github.com/TryGhost/Casper.git" target="_blank" rel="noopener">https://github.com/TryGhost/Casper.git</a> themes/Casper<br>在 blog 文件下 themes/yilia 下便可以看见主题<br>修改 _config.yml 文件<br>    theme: yilia （你的皮肤文件名称）<br>保存退出即可<br>hexo g  更新<br>hexo s  部署<br>hexo d  推送</p>
+<hr>
+<h2 id="额外-gitee部署"><a href="#额外-gitee部署" class="headerlink" title="额外  gitee部署"></a>额外  gitee部署</h2><p>基本与 Github 一致，只是部署到 Gitee 上去<br>npm install hexo-asset-image –save<br>修改 ——config.yml<br>post_asset_folder: true<br>位置在 test/source/_posts下，会同时生成test目录和test.md 网页，将需要的图片放置到test目录下，test.md就可以正常解析了，注意：要在图片路径直接写成同目录下即可。</p>
+<hr>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>哔哩哔哩<br><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186</a></p>
+<h2 id="https-www-cnblogs-com-somata-p-11255547-html"><a href="#https-www-cnblogs-com-somata-p-11255547-html" class="headerlink" title="https://www.cnblogs.com/somata/p/11255547.html"></a><a href="https://www.cnblogs.com/somata/p/11255547.html" target="_blank" rel="noopener">https://www.cnblogs.com/somata/p/11255547.html</a></h2>
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-hello-world" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/03/18/hello-world/"
+    >Hello World</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/03/18/hello-world/" class="article-date">
+  <time datetime="2020-03-18T12:50:25.481Z" itemprop="datePublished">2020-03-18</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+  </article>
+  
+
+  
+</section>
+</div>
+
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2015-2020
+        John Doe
+      </li>
+      <li>
+        
+        Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
+        
+        
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
+        
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </main>
+    <aside class="sidebar">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/share.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 100,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/js/ayer.js"></script>
+
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
+</body>
+
+</html>
